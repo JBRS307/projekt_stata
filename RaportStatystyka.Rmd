@@ -1,0 +1,116 @@
+---
+title: "Projekt Zaliczeniowy"
+author: "Jakub Rękas, Ernest Szlamczyk"
+output: pdf_document
+---
+
+## Wstęp
+Projekt ten ma na celu proste opracowanie statystyczne wyników porównania działania wybranych algorytmów minimalizacji stochastycznej.    
+
+Do porównania wybraliśmy algorytmy:  
+* Poszukikwanie przypadkowe (Pure Random Search, PRS)  
+* Metoda wielokrotnego startu (multi-start, MS)  
+
+Dodatkowo użyliliśmy funkji:  
+* Ackley’a  
+* Rastrigina  
+
+## WYNIKI
+
+```{r echo=FALSE}
+test <- as.vector(read.csv("./data/ackley2Dms.csv"))$x
+hist(test, main="Funkcja Ackleya 2D, MS", 
+     xlab = "Znaleziona wartość minimum", ylab = "Ilość wystąpień", labels = TRUE,
+     ylim = c(0,70), xlim = c(0,12)
+     )
+```
+
+```{r echo=FALSE}
+test <- as.vector(read.csv("./data/ackley2Dprs.csv"))$x
+hist(test, main="Funkcja Ackleya 2D, PRS", 
+     xlab = "Znaleziona wartość minimum", ylab = "Ilość wystąpień", labels = TRUE,
+     ylim = c(0,40), xlim = c(0,8)
+     )
+```
+
+```{r echo=FALSE}
+test <- as.vector(read.csv("./data/ackley10Dms.csv"))$x
+hist(test, main="Funkcja Ackleya 10D, MS", 
+     xlab = "Znaleziona wartość minimum", ylab = "Ilość wystąpień", labels = TRUE,
+     ylim = c(0,50), xlim = c(14,20)
+     )
+```
+
+```{r echo=FALSE}
+test <- as.vector(read.csv("./data/ackley10Dprs.csv"))$x
+hist(test, main="Funkcja Ackleya 10D, PRS", 
+     xlab = "Znaleziona wartość minimum", ylab = "Ilość wystąpień", labels = TRUE,
+     ylim = c(0,40), xlim = c(15,20)
+     )
+```
+
+```{r echo=FALSE}
+test <- as.vector(read.csv("./data/ackley20Dms.csv"))$x
+hist(test, main="Funkcja Ackleya 20D, MS", 
+     xlab = "Znaleziona wartość minimum", ylab = "Ilość wystąpień", labels = TRUE,
+     ylim = c(0,40), xlim = c(17,20)
+     )
+```
+
+```{r echo=FALSE}
+test <- as.vector(read.csv("./data/ackley20Dprs.csv"))$x
+hist(test, main="Funkcja Ackleya 20D, PRS", 
+     xlab = "Znaleziona wartość minimum", ylab = "Ilość wystąpień", labels = TRUE,
+     ylim = c(0,50), xlim = c(18,21)
+     )
+```
+
+```{r echo=FALSE}
+test <- as.vector(read.csv("./data/rastrigin2Dms.csv"))$x
+hist(test, main="Funkcja Rastrigina 2D, MS", 
+     xlab = "Znaleziona wartość minimum", ylab = "Ilość wystąpień", labels = TRUE,
+     ylim = c(0,70), xlim = c(0,1)
+     )
+```
+
+```{r echo=FALSE}
+test <- as.vector(read.csv("./data/rastrigin2Dprs.csv"))$x
+hist(test, main="Funkcja Rastrigina 2D, PRS", 
+     xlab = "Znaleziona wartość minimum", ylab = "Ilość wystąpień", labels = TRUE,
+     ylim = c(0,40), xlim = c(0,4)
+     )
+```
+
+```{r echo=FALSE}
+test <- as.vector(read.csv("./data/rastrigin10Dms.csv"))$x
+hist(test, main="Funkcja Rastrigina 10D, MS", 
+     xlab = "Znaleziona wartość minimum", ylab = "Ilość wystąpień", labels = TRUE,
+     ylim = c(0,40), xlim = c(0,40)
+     )
+```
+
+```{r echo=FALSE}
+test <- as.vector(read.csv("./data/rastrigin10Dprs.csv"))$x
+hist(test, main="Funkcja Rastrigina 10D, PRS", 
+     xlab = "Znaleziona wartość minimum", ylab = "Ilość wystąpień", labels = TRUE,
+     ylim = c(0,30), xlim = c(40,100)
+     )
+```
+
+```{r echo=FALSE}
+test <- as.vector(read.csv("./data/rastrigin20Dms.csv"))$x
+hist(test, main="Funkcja Rastrigina 20D, MS", 
+     xlab = "Znaleziona wartość minimum", ylab = "Ilość wystąpień", labels = TRUE,
+     ylim = c(0,30), xlim = c(30,100)
+     )
+```
+
+```{r echo=FALSE}
+test <- as.vector(read.csv("./data/rastrigin20DPRS.csv"))$x
+hist(test, main="Funkcja Rastrigina 20D, PRS", 
+     xlab = "Znaleziona wartość minimum", ylab = "Ilość wystąpień", labels = TRUE,
+     ylim = c(0,40), xlim = c(160,260)
+     )
+```
+
+
