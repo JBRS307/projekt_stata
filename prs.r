@@ -1,3 +1,5 @@
+library(rlist)
+
 prs <- function(fn, points) {
   minValue <- Inf
   for (i in seq_along(points)) {

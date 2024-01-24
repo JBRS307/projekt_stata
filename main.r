@@ -1,6 +1,5 @@
 library(stats)
 library(smoof)
-library(rlist)
 source("prs.r")
 source("ms.r")
 
