@@ -17,6 +17,7 @@ Dodatkowo użyliliśmy funkji:
 
 ## WYNIKI
 
+### Kolejne histogramy
 ```{r echo=FALSE}
 test <- as.vector(read.csv("./data/ackley2Dms.csv"))$x
 hist(test, main="Funkcja Ackleya 2D, MS", 
@@ -113,6 +114,8 @@ hist(test, main="Funkcja Rastrigina 20D, PRS",
      )
 ```
 
+# Wykresy pudełkowe
+
 ```{r echo=FALSE}
 a2ms <- as.vector(read.csv("./data/ackley2Dms.csv"))$x
 a2prs <- as.vector(read.csv("./data/ackley2Dprs.csv"))$x
@@ -136,6 +139,10 @@ boxplot(r10ms,r10prs, main = "Rastrigin 10D", names = c("MS", "PRS"), ylab = "Il
 boxplot(r20ms,r20prs, main = "Rastrigin 20D", names = c("MS", "PRS"), ylab = "Ilość wystąpień")
 ```
 
+## T testy
+
+Dla hipotezy zerowej twierdzącej, że średnie są sobie równe 
+
 ```{r echo=FALSE}
 t.test(x = a2prs, y = a2ms, paired = TRUE)
 ```
@@ -154,3 +161,8 @@ t.test(x = r10prs, y = r10ms, paired = TRUE)
 ```{r echo=FALSE}
 t.test(x = r20prs, y = r20ms, paired = TRUE)
 ```
+
+### Wniosek:
+
+Dla większości testów hipoteza zerowa jest odrzucana z 
+blisko zerowym prawdopodowbieństwem popełnienia błędu pierwszego rodzaju.
