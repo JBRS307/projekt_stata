@@ -136,3 +136,21 @@ boxplot(r10ms,r10prs, main = "Rastrigin 10D", names = c("MS", "PRS"), ylab = "Il
 boxplot(r20ms,r20prs, main = "Rastrigin 20D", names = c("MS", "PRS"), ylab = "Ilość wystąpień")
 ```
 
+```{r echo=FALSE}
+t.test(x = a2prs, y = a2ms, paired = TRUE)
+```
+```{r echo=FALSE}
+t.test(x = a10prs, y = a10ms, paired = TRUE)
+```
+```{r echo=FALSE}
+t.test(x = a20prs, y = a20ms, paired = TRUE)
+```
+```{r echo=FALSE}
+t.test(x = r2prs, y = r2ms, paired = TRUE)
+```
+```{r echo=FALSE}
+t.test(x = r10prs, y = r10ms, paired = TRUE)
+```
+```{r echo=FALSE}
+t.test(x = r20prs, y = r20ms, paired = TRUE)
+```
