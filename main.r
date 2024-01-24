@@ -98,8 +98,3 @@ write.csv(mean(rastrigin20Dms), file = "./data/rastrigin20DmsAVG.csv", row.names
 
 write.csv(rastrigin20Dprs, file = "./data/rastrigin20Dprs.csv", row.names = FALSE)
 write.csv(mean(rastrigin20Dprs), file = "./data/rastrigin20DprsAVG.csv", row.names = FALSE)
-
-
-# jpeg(file = "./histAckley2Dms.jpeg", width = 1920, height = 1080)
-# hist(ackley2Dms, main="Funkcja Ackleya 2D, MS", xlab = "Znaleziona wartość minimum", ylab = "Częstotliwość", labels = TRUE)
-# dev.off()
