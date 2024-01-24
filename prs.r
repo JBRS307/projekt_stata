@@ -3,7 +3,7 @@ library(rlist)
 prs <- function(fn, points) {
   minValue <- Inf
   for (i in seq_along(points)) {
-    value <- fn(points[i])
+    value <- fn(points[[i]])
     minValue <- min(minValue, value)
   }
   return (minValue)
