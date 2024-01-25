@@ -11,9 +11,10 @@ Do porównania wybraliśmy algorytmy:
 * Poszukikwanie przypadkowe (Pure Random Search, PRS)  
 * Metoda wielokrotnego startu (multi-start, MS)  
 
-Dodatkowo użyliliśmy funkji:  
+Do porównań użyliliśmy funkji:  
 * Ackley’a  
-* Rastrigina  
+* Rastrigina\
+Obie z tych funkcji mają wartośc najmniejszą równą 0 w punkcie $\mathbf{x}$ = $\overline{0}$
 
 # WYNIKI
 
